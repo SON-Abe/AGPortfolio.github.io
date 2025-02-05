@@ -1,49 +1,49 @@
-*{
+*{/*Fonts*/
     margin: 0;
     padding: 0;
     font-family: 'Proxima Nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-html{
+html{/*Scrolling*/
     scroll-behavior: smooth;
 }
-body{
+body{/*theme*/
     background: #D2B48C ; /*#d68d6f*/
-    color: #000;
+    color: white; /*TODO:#010b13*/
 }
-#header{
+#header{/*header*/
     width: 100%;
     height: 100vh;
-    background-image: url(Assets/websitePhotos/img2.jpg);
+    background-image: url(Assets/UI/background.png);
     background-size: cover;
     background-position: center;
 }
-.container{
+.container{/*padded perimeter*/
     padding: 10px 10%;
 
 }
-nav{
+nav{/*behavior of tabs on top*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+.logo{/*the image of the tabs*/
     width: 140px;
 }
-nav ul li{
+nav ul li{/*spacing of tabs*/
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 
 }
-nav ul li a{
+nav ul li a{/*color & size of tabs*/
     color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-nav ul li a::after{
+nav ul li a::after{/*effects when hovering over a tab*/
     content: '';
     width: 0;
     height: 3px;
@@ -53,54 +53,54 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     width: 100%;
 }
-.header-text{
+.header-text{/*header text stuff*/
     margin-top: 20%;
     font-size: 30px;
 }
-.header-text h1{
+.header-text h1{/*header text stuff*/
     font-size: 60px;
     margin-top: 20px;
 }
 /* -------------about---------------- */
-#about{
+#about{/*padding & color*/
     padding: 80px 0;
-    color: grey;
+    color: white; /*TODO:*/
 }
-.row{
+.row{/*sets the row*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+.about-col-1{/*width of pic col*/
     flex-basis: 35%;
 }
-.about-col-1 img{
+.about-col-1 img{/*full img captured w/ round corners*/
     width: 100%;
     border-radius: 15px;
 }
-.about-col-2{
+.about-col-2{/*width of txt col*/
     flex-basis: 60%;
 }
-.sub-title{
+.sub-title{/*size & color of section title*/
     font-size: 50px;
     font-weight: 600;
-    color: white;
+    color: white; /*TODO:*/
 }
-.tab-titles{
+.tab-titles{/*sets the tabs*/
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+.tab-links{/*styles & makes the tab buttons*/
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+.tab-links::after{/*adds underline animation effect*/
     content: '';
     width: 0;
     height: 3px;
@@ -110,55 +110,54 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+.tab-links.active-link::after{/*expands underline when tab is active*/
     width: 50%;
 }
-.tab-contents ul li{
+.tab-contents ul li{/*lists items under active tab*/
     list-style: none;
     margin: 10px 0;
 }
-.tab-contents ul li span{
+.tab-contents ul li span{/*styles bullet txt under active tab*/
     color: rgb(202, 202, 202);
     font-size: 17px;
 }
-.tab-contents{
+.tab-contents{/*initially hides tab content*/
     display: none;
 }
-.tab-contents.active-tab{
+.tab-contents.active-tab{/*displays tab content when active*/
     display: block;
 }
 /* ---------portfolio--------- */
-#portfolio{
+#portfolio{/*parimeter of portfolio section*/
     padding: 50px 0;
 }
-.work-exp{
+.work-exp{/*TODO:grid style for proj*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-
-.work-list{
+.work-list{/*TODO:grid style for research*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+.work{/*styles project section with round edges, hides overflow content*/
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work img{
+.work img{/*img of proj/re responsive & animated when hover*/
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+.layer{/*overlay effect for portfolio items*/
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), white);
+    background: linear-gradient(#d2b48c, white); /*when hover transition in bg color for overlay section*/
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -167,83 +166,83 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /*gradient bg color from up/down*/
     padding: 0 40px;
     text-align: center;
     font-size: 15px;
     transition: height 0.5s;
 }
-.layer h3{
+.layer h3{/*txt in overlay*/
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+.layer a{/*STYLES call to action button in overlay*/
     margin-top: 20px;
     color: white;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background-color: black;
+    background-color: #d2b48c;
     width: 60px;
     height: 60px;
     border-radius: 50px;
 }
-.work:hover img{
+.work:hover img{/*enalarges img while hover behind ovelay*/
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer{/*display overlay when hover*/
     height: 100%;
 }
 
 /* ---------contact------ */
-.contact-left{
+.contact-left{/*left col width*/
     flex-basis: 35%;
 }
-.contact-right{
+.contact-right{/*right col wdith*/
     flex-basis: 60%;
 }
-.contact-left p{
+.contact-left p{/*spacing for paragraphs*/
     margin-top: 30px;
 }
-.contact-left p i{
-    color: white;
+.contact-left p i{/*styles icons*/
+    color: #2d4b73;/*FIXME:*/
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+.social-icons{/*margins for social icon section*/
     margin-top: 30px;
 }
-.social-icons a{
+.social-icons a{/*styles icons w/ hover effects*/
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: grey;
+    color: #2d4b73;/*FIXME:*/
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
-    color: white;
+.social-icons a:hover{/*hover effect*/
+    color: #2d4b73;/*FIXME:*/
     transform: translateY(-5px);
 }
-.btn{
+.btn{/*turn icon to buttons*/
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid white;
+    border: 1px solid #2d4b73;/*FIXME:*/
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: whitesmoke;
+    color: whitesmoke;/*FIXME:*/
     transition: 0.5s;
 }
-.btn:hover{
-    background: white;
+.btn:hover{/*icon color as a button*/
+    background: #2d4b73;/*FIXME:*/
 }
-.contact-right form{
+.contact-right form{/*form size*/
     width: 100%;
 }
-form input, form textarea{
+form input, form textarea{/*TODO:styles form*/
     width: 100%;
     border: 0;
     outline: none;
@@ -254,8 +253,8 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }  
-input[type=submit] {
-    background-color: black;
+input[type=submit] {/*TODO: styles submit button*/
+    background-color: #d2b48c;
     color: white;
     padding: 12px 20px;
     border: 1px solid white;
@@ -264,20 +263,20 @@ input[type=submit] {
     transition: transform 0.5s;
   }
   
-  input[type=submit]:hover {
-    background-color: white;
+  input[type=submit]:hover {TODO:/*changs color of submit button w/ hover*/
+    background-color: #e7ddce;
     transition: 0.5s;
   }
-.copyright{
+.copyright{/*styles copyright section*/
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #d2b48c;
     font-weight: 300;
     margin-top: 20px;
 }
 /* ----------css for small screen------------ */
-@media only screen and (max-with: 600px){
+@media only screen and (max-with: 600px){/*style for small screen*/
     #header{
         background-image: url();
     }

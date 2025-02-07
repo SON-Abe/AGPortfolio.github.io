@@ -131,13 +131,13 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 #portfolio{/*parimeter of portfolio section*/
     padding: 50px 0;
 }
-.work-exp{/*TODO:grid style for proj*/
+.work-exp{/*FIXME: PRETTY SURE I CAN GET RIDE OF LIST OR EXP*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work-list{/*TODO:grid style for research*/
+.work-list{/*FIXME:grid style for research*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;

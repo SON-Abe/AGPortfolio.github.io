@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGPortfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <!--??????-->><script src="https://kit.fontawesome.com/3c0d6d6761.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<img src="Assets/UI/logo.png" class="logo">-->
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Abraham Garcia, Computer Engineer</p>
+                <h1>Hardware<br>Software<br>Electrical</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/UI/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="font-size:16px;">Graduated from UNLV with a Bachelor's in Computer Engineering 
+                                                in December 2024. With 6 years of experience developing electrical, 
+                                                hardware, and software skills, I am proficient in C/C++, Python, 
+                                                SystemVerilog, AWS Cloud Computing, and FPGA design. My hands-on 
+                                                expertise includes embedded systems, robotics, and IoT. My passion 
+                                                is to create technology that makes life more comfortable and efficient 
+                                                for everyone.<br></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Hardware Tools</span><br>ATmega328PB, FPGA, Jetson Nano, ROSMASTER X1, MKR 1000<br></li>
+                            <li><span>Languages</span><br>Advanced: C++, C, SystemVerilog; 
+                                                      <br>Proficient: RISC-V, R, Python, Javascript, HTML/CSS</li>
+                            <li><span>Developer Tools</span><br>VS Code,  Cadence Virtuoso, LTSpice, Microchip Studio, MARs, 
+                                                                Logic, Arduino IDE, Quartus II, ModelSim, Active-HDL, AWS Cloud, 
+                                                                KiCAD, ROS, Linux OS, ThingSpeak</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.S. Computer Engineering</span><br>UNLV</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------projects------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class = "sub-title">Projects</h1>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Website')">Website</p>
+                <p class="tab-links" onclick="opentab('ROS Robot')">ROS Robot</p>
+                <p class="tab-links active-link" onclick="opentab('Buck Converter')">Buck Converter</p>
+                <p class="tab-links active-link" onclick="opentab('HoloTouch')">HoloTouch</p>
+                <p class="tab-links active-link" onclick="opentab('IoT System')">IoT System</p>
+                <p class="tab-links active-link" onclick="opentab('FPGA Lock')">FPGA Lock</p>
+                <p class="tab-links active-link" onclick="opentab('Sonar Radar')">Sonar Radar</p>
+            </div>
+
+            <!--1 Website-->
+            <div class="tab-contents active-tab" id="Website">    
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/background.jpg" alt=""> <!--TODO:-->
+                        <div class="layer">
+                            <h3>Portfolio</h3>
+                            <a href="https://github.com/SON-Abe/AGPortfolio.github.io"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    </div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                        Acts as an extension of my professional media presence while adding another project to my portfolio, expanding my 
+                        skills in CSS, HTML, and JavaScript.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--2 ROSbot-->
+            <div class="tab-contents" id="ROS Robot">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/MobileRobot.png" alt="">
+                        <div class="layer">
+                            <h3>ROSMASTER X1</h3>
+                            <a href="https://github.com/SON-Abe/Mobile-Robotics/tree/d0416e18833179db87030504476fab3e69752392/yahboomcar_ws"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    <div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                            This project involved developing a mobile robot capable of simulation and real-world operation using ROS, a URDF model, 
+                            and various hardware components such as a Jetson Nano and LIDAR. The rover was designed to perform tasks including 
+                            teleoperation, mapping, localization, and autonomous navigation with collision avoidance, integrating software and hardware 
+                            to achieve efficient environmental interaction.<br><br><br></p>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/Papers/MobRob_FinalReport.pdf" alt="">
+                        <div class="layer">
+                            <h3>Report</h3>
+                            <p> </p>
+                            <a href="Assets/Papers/MobRob_FinalReport.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--3 Buck Converter-->
+            <div class="tab-contents" id="Buck Converter">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/BuckConverter.png" alt=""> <!--TODO:-->
+                        <div class="layer">
+                            <h3>Buck Converter</h3>
+                            <a href="https://github.com/SON-Abe/BuckConverter.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/Papers/EE 421 Final Project.pdf" alt="">
+                        <div class="layer">
+                            <h3>Report</h3>
+                            <p> </p>
+                            <a href="Assets/Papers/EE 421 Final Project.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    </div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                            This project involves designing and simulating a bandgap reference, charge pump, latch, oscillator, and buck converter to 
+                            generate a stable voltage reference and regulate power efficiently. Despite achieving functional circuit operation, the 
+                            efficiency score remained at 0.076 due to higher-than-required current consumption.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--4 HoloTouch-->
+            <div class="tab-contents active-tab" id="HoloTouch">    
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/HoloTouch.png" alt=""> <!--TODO:-->
+                        <div class="layer">
+                            <h3>HoloTouch</h3>
+                            <a href="https://github.com/SON-Abe/HoloTouch.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/Papers/EE 421 Final Project.pdf" alt="">
+                        <div class="layer">
+                            <h3>Report</h3>
+                            <p> </p>
+                            <a href="Assets/Papers/SDfinalReport_HoloTouch.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    </div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                            HoloTouch is a senior design project that integrates holographic display technology with hand gesture recognition for 
+                            intuitive computer interaction. The system features a custom-built holographic display enclosed in a wooden frame with an 
+                            acrylic panel set at a 45° angle to create a floating 3D effect. A front-facing USB camera, aided by LED lights, captures 
+                            hand gestures, which are processed using Google's MediaPipe framework. These gestures control computer functions via APIs such 
+                            as PyAutoGUI and pynput, enabling actions like cursor control, zoom, rotation, and window navigation. The project evolved from 
+                            using an Nvidia Jetson Nano to desktop hardware for improved performance. The final design includes an optimized housing, 
+                            expanded gesture library, and integration with Google Earth for 3D object manipulation. The system demonstrates real-time, 
+                            touch-free computer interaction using holographic visualization.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--5 IoT-->
+            <div class="tab-contents" id="IoT System">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/IoT.png" alt="">
+                        <div class="layer">
+                            <h3>IoT System</h3>
+                            <a href="https://github.com/SON-Abe/Ambiance_Monitoring_and_Music_Recommendation_System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/Papers/EE 421 Final Project.pdf" alt="">
+                        <div class="layer">
+                            <h3>Report</h3>
+                            <p> </p>
+                            <a href="Assets/Papers/IoT_CPE417_Final.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    <div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                            The Ambiance Monitoring and Music Recommendation System is an IoT system made to enhance users mood and vibes by tailoring music 
+                            recommendations to the local weather. It uses a temperature sensor (TMP36) and a humidity sensor (HPP801A031) to determine local 
+                            weather conditions, each sensor is connected to a dedicated node that communicates data to the cloud using MQTT network protocol. 
+                            The system will use ThingSpeak cloud services for data storage, analysis, and processing to trigger a Spotify API applet to 
+                            recommend or play a Spotify playlist to match the mood. ThingSpeak cloud services provide a dashboard to monitor real time data 
+                            trend visuals.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--6 Lock Pad-->
+            <div class="tab-contents" id="FPGA Lock">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/KeypadLock.png" alt=""> <!--TODO:-->
+                        <div class="layer">
+                            <h3>FPGA Digital Lock System</h3>
+                            <a href="https://github.com/SON-Abe/Keypad.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/Papers/EE 421 Final Project.pdf" alt="">
+                        <div class="layer">
+                            <h3>Report</h3>
+                            <p> </p>
+                            <a href="Assets/Papers/Abraham_Garcia_Keypad.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    </div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                            This project had my teammate and I working with the microcontroller’s LCD and push-button matrix to display strings and data on 
+                            the LCD, either hardcoded or entered via the keypad/push-button matrix. We first hardcoded a string display message, then 
+                            displayed a message when a push button in the matrix was pressed, and finally when a code was entered correctly.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--7 Sonar Radar-->
+            <div class="tab-contents" id="Sonar Radar">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/UI/SonarRadar.png" alt="">
+                        <div class="layer">
+                            <h3>Sonar Radar</h3>
+                            <a href="https://github.com/SON-Abe/Embedded-System-Design/tree/91a03007a17a5032055bc631b8d09d479c6f7f7e/Design_Assignments/DA5"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/Papers/EE 421 Final Project.pdf" alt="">
+                        <div class="layer">
+                            <h3>Report</h3>
+                            <p> </p>
+                            <a href="Assets/Papers/Garcia_Abraham_RadarSystem.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-exp">
+                    </div class="work">
+                        <p style="font-size: 18px; color: grey;">
+                            This project involved programming an ATmega328PB microcontroller to interface with an ultrasonic sensor and a servo motor, 
+                            enabling distance measurement and motor control. The system used serial communication to transmit real-time distance and angle 
+                            data while the servo motor scanned a 180-degree range.<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Adam.hamou1975@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+1 (702) 785-3296</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/adamohamou/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/adam-hamou/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/AdamoHamou?tab=repositories"></i><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Assets/Resume/AdamoHamouResume.pdf" i class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Adam</p>
+        </div>
+    </div>
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwar2iwjd2YfO2MUTvOaEX38Utec3pzOclj90rr0n8CQ7gNbd9doq9cS9gRITDXcqEX/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){msg.innerHTML = ""},5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>

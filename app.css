@@ -142,18 +142,14 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 /*----------Projects----------*/
 #portfolio{/*parimeter of portfolio section*/
     padding: 50px 0;
-}/*
-.proj-list{FIXME: PRETTY SURE I CAN GET RIDE OF LIST OR EXP
+}
+.proj-list{/*FIXME: PRETTY SURE I CAN GET RIDE OF LIST OR EXP*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-}*/
+}
 .proj{/*styles project section with round edges, hides overflow content*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;

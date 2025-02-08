@@ -108,7 +108,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     margin: 10px 0;
 }
 .tab-contents ul li span{/*styles bullet txt under active tab*/
-    color:#d1a993;
+    color:#82c6dc;
     font-size: 17px;
 }
 .tab-contents{/*initially hides tab content*/
@@ -120,7 +120,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 
 /*----------About----------*/
 #about{/*padding & color*/
-    padding: 80px 0;
+    padding: 60px 0;
     color: white; /*TODO:*/
 }
 .row{/*sets the row*/
@@ -142,20 +142,18 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 /*----------Projects----------*/
 #portfolio{/*parimeter of portfolio section*/
     padding: 50px 0;
-}
-.proj-exp{/*FIXME: PRETTY SURE I CAN GET RIDE OF LIST OR EXP*/
+}/*
+.proj-list{FIXME: PRETTY SURE I CAN GET RIDE OF LIST OR EXP
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-}
-.proj-list{/*FIXME:grid style for research*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
+}*/
 .proj{/*styles project section with round edges, hides overflow content*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;

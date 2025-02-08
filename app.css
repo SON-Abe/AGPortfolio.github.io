@@ -9,7 +9,7 @@ html{/*Scrolling*/
 }
 body{/*theme*/
     background: #D2B48C ; /*#d68d6f*/
-    color: #c0c0c0; /*TODO:#010b13*/
+    color: white; /*TODO:#010b13*/
 }
 #header{/*header*/
     width: 100%;
@@ -34,7 +34,7 @@ nav ul li{/*spacing of tabs*/
     margin: 10px 20px;
 }
 nav ul li a{/*color & size of tabs*/
-    color: #c0c0c0;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -43,7 +43,7 @@ nav ul li a::after{/*effects when hovering over a tab*/
     content: '';
     width: 0;
     height: 3px;
-    background: #c0c0c0;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -65,13 +65,12 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 .sub-title{/*size & color of section title*/
     font-size: 50px;
     font-weight: 600;
-    color: #c0c0c0; /*TODO:*/
+    color: white; /*TODO:*/
 }
 #portfolio .sub-title{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
     text-align: center;
 }
 .tab-titles{/*sets the tabs*/
@@ -82,7 +81,6 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
     text-align: center;
 }
 .tab-links{/*styles & makes the tab buttons*/
@@ -96,7 +94,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     content: '';
     width: 0;
     height: 3px;
-    background: #c0c0c0;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -123,7 +121,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 /*----------About----------*/
 #about{/*padding & color*/
     padding: 80px 0;
-    color: #c0c0c0; /*TODO:*/
+    color: white; /*TODO:*/
 }
 .row{/*sets the row*/
     display: flex;
@@ -192,7 +190,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .layer a{/*STYLES call to action button in overlay*/
     margin-top: 20px;
-    color: #c0c0c0;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -268,9 +266,9 @@ border-radius: 6px;
 }  
 input[type=submit] {/*TODO: styles submit button*/
 background-color: #d2b48c;
-color: #c0c0c0;
+color: white;
 padding: 12px 20px;
-border: 1px solid #c0c0c0;
+border: 1px solid white;
 border-radius: 4px;
 cursor: pointer;
 transition: transform 0.5s;

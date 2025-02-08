@@ -175,7 +175,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     align-items: center;
     justify-content: center;
     flex-direction: column; /*gradient bg color from up/down*/
-    padding: 0 40px;
+    padding: 0 30px;
     text-align: center;
     font-size: 15px;
     transition: height 0.5s;

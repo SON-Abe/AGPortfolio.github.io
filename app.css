@@ -108,7 +108,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     margin: 10px 0;
 }
 .tab-contents ul li span{/*styles bullet txt under active tab*/
-    color:#82c6dc;
+    color:#001440;
     font-size: 17px;
 }
 .tab-contents{/*initially hides tab content*/

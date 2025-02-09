@@ -143,7 +143,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 #portfolio{/*parimeter of portfolio section*/
     padding: 50px 0;
 }
-.proj-list{/*FIXME: PRETTY SURE I CAN GET RIDE OF LIST OR EXP*/
+.proj-list{/**/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
@@ -163,7 +163,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     transition: transform 0.5s;
 }
 .layer{/*overlay effect for portfolio items*/
-    width: 100%;
+    width: 30%;
     height: 0%;
     background: linear-gradient(#d2b48c, white); /*when hover transition in bg color for overlay section*/
     border-radius: 10px;

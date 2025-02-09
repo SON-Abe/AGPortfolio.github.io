@@ -157,7 +157,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     overflow: hidden;
 }
 .proj img{/*img of projects responsive & animated when hover*/
-    width: 30%;
+    width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;

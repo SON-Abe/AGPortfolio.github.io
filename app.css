@@ -105,7 +105,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .tab-contents ul li{/*lists items under active tab*/
     list-style: none;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .tab-contents ul li span{/*styles bullet txt under active tab*/
     color:#001440;
@@ -122,12 +122,6 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 #about{/*padding & color*/
     padding: 20px 0;
     color: white; /*TODO:*/
-}
-.about-tabs .tab-titles {
-    margin-bottom: 5px;
-}
-.about-tabs .tab-contents {
-    margin-top: 5px;
 }
 .row{/*sets the row*/
     display: flex;

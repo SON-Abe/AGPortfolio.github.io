@@ -262,15 +262,15 @@ border-radius: 6px;
 }  
 input[type=submit] {/*TODO: styles submit button*/
 background-color: #d2b48c;
-color: white;
+color: #2d4b73;
 padding: 12px 20px;
-border: 1px solid white;
+border: 1px solid #2d4b73;
 border-radius: 4px;
 cursor: pointer;
 transition: transform 0.5s;
 }
 input[type=submit]:hover {TODO:/*changs color of submit button w/ hover*/
-background-color: #e7ddce;
+background-color: #2d4b73;
 transition: 0.5s;
 }
 .copyright{/*styles copyright section*/

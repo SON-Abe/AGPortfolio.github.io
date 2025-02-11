@@ -123,6 +123,12 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     padding: 20px 0;
     color: white; /*TODO:*/
 }
+.about-tabs .tab-titles {
+    margin-bottom: 5px;
+}
+.about-tabs .tab-contents {
+    margin-top: 5px;
+}
 .row{/*sets the row*/
     display: flex;
     justify-content: space-between;

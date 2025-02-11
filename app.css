@@ -75,7 +75,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .tab-titles{/*sets the tabs*/
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
 }
 #portfolio .tab-titles{
     display: flex;
@@ -120,7 +120,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 
 /*----------About----------*/
 #about{/*padding & color*/
-    padding: 50px 0;
+    padding: 20px 0;
     color: white; /*TODO:*/
 }
 .row{/*sets the row*/

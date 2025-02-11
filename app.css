@@ -85,6 +85,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 25px;
 }
 .tab-links{/*styles & makes the tab buttons*/
     margin-right: 50px;

@@ -160,13 +160,13 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     overflow: hidden;
 }
 .proj img{/*img of projects responsive & animated when hover*/
-    width: 30%;
+    width: 60%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
 .layer{/*overlay effect for portfolio items*/
-    width: 30%;
+    width: 60%;
     height: 0%;
     background: linear-gradient(#d2b48c, white); /*when hover transition in bg color for overlay section*/
     border-radius: 10px;

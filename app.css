@@ -151,8 +151,8 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
     margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .proj{/*styles project section with round edges, hides overflow content*/
     border-radius: 10px;

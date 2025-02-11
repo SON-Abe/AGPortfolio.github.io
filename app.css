@@ -78,7 +78,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     margin: 20px 0 40px;
 }
 #about .tab-titles{
-    margin-bottom: -5px;
+    margin-bottom: 25px;
 }
 #portfolio .tab-titles{
     display: flex;
@@ -150,7 +150,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 40px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 50px;
     margin-right: 50px;
 }

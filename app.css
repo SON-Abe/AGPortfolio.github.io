@@ -75,7 +75,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .tab-titles{/*sets the tabs*/
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 0px;
 }
 #about .tab-titles{
     margin-bottom: 25px;

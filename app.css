@@ -165,13 +165,8 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     display: block;
     transition: transform 0.5s;
 }
-.proj p{
-    padding: 20px; /* Adds space around the text */
-    margin: 0 auto; /* Centers the text */
-    max-width: 80%;
-}
 .layer{/*overlay effect for portfolio items*/
-    width: 100%;
+    width: 30%;
     height: 0%;
     background: linear-gradient(#d2b48c, white); /*when hover transition in bg color for overlay section*/
     border-radius: 10px;

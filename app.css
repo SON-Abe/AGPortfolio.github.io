@@ -234,7 +234,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .btn{/*turn icon to buttons*/
     display: block;
-    margin-right: 15px;
+    margin-top: 15px;
     width: fit-content;
     border: 1px solid #2d4b73;/*FIXME:*/
     padding: 14px 50px;

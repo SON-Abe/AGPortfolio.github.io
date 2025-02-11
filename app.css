@@ -224,6 +224,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
+    margin-top: 0px;
     color: #2d4b73;/*FIXME:*/
     display: inline-block;
     transition: transform 0.5s;

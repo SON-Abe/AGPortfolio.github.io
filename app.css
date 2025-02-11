@@ -234,7 +234,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .btn{/*turn icon to buttons*/
     display: block;
-    margin: 15px auto;
+    margin-right: 15px;
     width: fit-content;
     border: 1px solid #2d4b73;/*FIXME:*/
     padding: 14px 50px;
@@ -262,7 +262,7 @@ border-radius: 6px;
 }  
 input[type=submit] {/*TODO: styles submit button*/
 background-color: #d2b48c;
-color: #2d4b73;
+color: white;
 padding: 12px 20px;
 border: 1px solid #2d4b73;
 border-radius: 4px;

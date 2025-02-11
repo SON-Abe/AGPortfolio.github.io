@@ -75,7 +75,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 }
 .tab-titles{/*sets the tabs*/
     display: flex;
-    margin: 20px 0 20px;
+    margin: 20px 0 40px;
 }
 #portfolio .tab-titles{
     display: flex;
@@ -141,7 +141,7 @@ nav ul li a:hover::after{/*animats underline effect when hovering over tab*/
 
 /*----------Projects----------*/
 #portfolio{/*parimeter of portfolio section*/
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .proj-list{/**/
     display: grid;
